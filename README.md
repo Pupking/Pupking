@@ -1,22 +1,20 @@
 # Sri Harshavardhan Reddy Deverapalli
 
-**GPU Kernel & Performance Engineer** | MS Computer Science @ NC State (GPA 3.95)
+**GPU Kernel & Performance Engineer** | MS Computer Science @ NC State (GPA 3.95) | Graduating May 2026 · Open to start dates from June 2026
 
-I build and tune CUDA/CUTLASS kernels for tensor, sparse, and AI workloads on modern GPU architectures. My MS thesis developed a block-sparse tensor contraction pipeline on H100, achieving 3.01× mean speedup over NVIDIA's cuTENSOR 2.5.0, reaching ~95% of FP64 Tensor Core peak throughput (~57.2 of 60 TFLOPS). I explored 3,000+ CUTLASS kernel configurations and built an O(1) rule-based kernel selection framework that replaces exhaustive autotuning.
+I build and tune CUDA/CUTLASS kernels for tensor, sparse, and AI workloads on modern GPU architectures. My MS thesis developed a block-sparse tensor contraction pipeline on H100, achieving **3.01× mean speedup** over NVIDIA's cuTENSOR 2.5.0 block-sparse API and reaching **~95% of FP64 Tensor Core peak** (~57.2 of 60 TFLOPS). I explored 3,000+ CUTLASS kernel configurations and built an O(1) rule-based kernel selection framework that replaces exhaustive autotuning.
 
-Currently seeking **GPU kernel engineering** and **HPC** roles. Graduating May 2026.
+Currently seeking **GPU kernel engineering** and **HPC** roles.
 
 ---
 
 ### What I Work On
 
-- **Kernel Engineering:** CUDA, CUTLASS 2.x/3.x, SYCL, oneAPI, CuTe, inline PTX (WMMA/MMA/GMMA), Tensor Core optimization, Shared Memory Tiling, Warp(Group)-level Primitives
-- **Profiling & Tuning:** Nsight Compute, Nsight Systems, Roofline Analysis, Occupancy Tuning, Register Pressure Management, Memory Bandwidth vs Memory Latency vs Compute Tradeoff Optimization
-- **Hardware:** H100 (Hopper/SM90), A100 (Ampere/SM80), Jetson Xavier, Intel PVC GPUs via oneAPI
-- **AI/ML Kernel Engineering:** Triton Kernel Development, FlashAttention-style Tiled Attention (forward pass from scratch), Fused Softmax/Bias/ReLU/Residual Kernels, PyTorch C++/CUDA Custom Ops, torch.compile Internals
-- **ML & Inference Systems:** Mixed-precision Inference (FP16/FP8/INT8), KV Cache Management, PagedAttention Concepts, Continuous Batching, Quantization-Aware Kernel Dispatch, DDP/FSDP Distributed Training
-- **ML Foundations:** PyTorch, CNNs, VAE-LSTM, Diffusion Models, Autoencoders, Anomaly Detection (NASA C-MAPSS), Hybrid Classical-Quantum CNNs
-- **Build & Infra:** CMake, Ninja, Slurm, Linux, CUDA Driver API, Runtime Kernel Dispatch
+- **GPU Kernel Engineering** — CUDA, CUTLASS 2.x/3.x, CuTe, inline PTX (WMMA/MMA/GMMA), Tensor Core optimization, shared-memory tiling, warp/warpgroup primitives, SYCL/oneAPI
+- **Performance Analysis** — Nsight Compute, Nsight Systems, roofline modeling, occupancy & register-pressure tuning, memory-bandwidth vs compute tradeoff analysis
+- **AI/ML Kernels & Inference** — Triton, FlashAttention-style tiled attention, fused softmax/bias/residual, PyTorch C++/CUDA custom ops, mixed-precision (FP16/FP8/INT8), KV cache & paged attention, DDP/FSDP
+
+**Hardware:** H100 (SM90), A100 (SM80), Jetson Xavier, Intel PVC via oneAPI
 
 ---
 <!--
@@ -40,9 +38,9 @@ Each kernel includes build instructions, benchmark tables vs baselines, Nsight C
 -->
 ### Research
 
-**Block-Sparse Tensor Contraction on GPUs** — MS Thesis
-CUTLASS-based pipeline for block-sparse tensor contractions in DMRG quantum simulation. 3.01× mean / 6.06× max speedup over cuTENSOR 2.5.0 block-sparse API across 20 workloads. FP64 Tensor Core config reaching ~95% of H100 peak. Code available upon paper acceptance.  
-*Advisor: Dr. Jiajia Li | Collaborators: North Carolina State University (Zecheng Li), Flatiron Institute (Miles Stoudenmire, Karl Pierce)*
+**Block-Sparse Tensor Contraction on GPUs** — MS Thesis ([NC State Repository](https://repository.lib.ncsu.edu/items/0b623de7-9602-43b2-877f-bfa7eebf1783))
+CUTLASS-based pipeline for block-sparse tensor contractions in DMRG quantum simulation. 3.01× mean / 6.06× max speedup over cuTENSOR 2.5.0 block-sparse API across 20 workloads. FP64 Tensor Core config reaching ~95% of H100 peak. Code available upon paper acceptance.
+*Advisor: Dr. Jiajia Li | Collaborators: NC State (Zecheng Li), Flatiron Institute (Miles Stoudenmire, Karl Pierce)*
 
 **Publications:**
 - "Image compression using quantum wavelet transforms" — *SPIE Quantum Computing, Communication, and Simulation V*, 2025
