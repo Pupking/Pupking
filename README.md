@@ -39,7 +39,7 @@ Each kernel includes build instructions, benchmark tables vs baselines, Nsight C
 ### Research
 
 **Block-Sparse Tensor Contraction on GPUs** — MS Thesis ([NC State Repository](https://repository.lib.ncsu.edu/items/0b623de7-9602-43b2-877f-bfa7eebf1783))
-CUTLASS-based pipeline for block-sparse tensor contractions in DMRG quantum simulation. 3.01× mean / 6.06× max speedup over cuTENSOR 2.5.0 block-sparse API across 20 workloads. FP64 Tensor Core config reaching ~95% of H100 peak. Code available upon paper acceptance.
+CUTLASS-based pipeline for block-sparse tensor contractions in DMRG quantum simulation. 3.01× mean / 6.06× max speedup over cuTENSOR 2.5.0 block-sparse API across 20 workloads. FP64 Tensor Core config reaching ~95% of H100 peak.
 *Advisor: Dr. Jiajia Li | Collaborators: NC State (Zecheng Li), Flatiron Institute (Miles Stoudenmire, Karl Pierce)*
 
 **Publications:**
