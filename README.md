@@ -19,7 +19,7 @@
 
 I build and profile CUDA/CUTLASS kernels for tensor, sparse, and AI workloads. My MS thesis developed an H100 block-sparse tensor contraction pipeline with **3.01× mean / 6.06× max speedup over cuTENSOR 2.5.0** and **~95% of H100 FP64 Tensor Core peak**.
 
-## Current Focus
+## Technical Focus
 
 - **CUDA kernel profiling studies:** GEMM, WMMA Tensor Core GEMM, reductions, softmax, and FlashAttention-lite
 - **GPU performance analysis:** Nsight Compute, Nsight Systems, roofline modeling, occupancy, memory bandwidth, and register-pressure tuning
